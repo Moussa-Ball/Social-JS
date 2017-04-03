@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="social.css">
+    <link rel="stylesheet" href="highlightjs/styles/tomorrow-night.css">
+    <title>Plugin js sharing on social networks</title>
+</head>
+<body>
+    <h1>Social JS Plugin</h1>
+    <h2>Share your content on the social networks</h2>
+    <h3>Example :</h3>
+        <button data-url="http://www.devphorm.com" class="share_twitter"><i class="fa fa-twitter"></i></button>
+        <button data-url="http://www.devphorm.com" class="share_google-plus"><i class="fa fa-google-plus"></i></button>
+        <button data-url="http://www.devphorm.com" class="share_linkedin"><i class="fa fa-linkedin"></i></button>
+        <button data-url="http://www.devphorm.com" class="share_facebook"><i class="fa fa-facebook"></i></button>
+    <h3>Using :</h3>
+    <ol>
+        <li>Import the file social.js or social.min.js in your page</li>
+        <pre>
+            <code>
+< script type='text/javascript' src="social.min.js">< /script>
+            </code>
+        </pre>
+        <li>You must create a variable object containing information that the script needs.</li>
+        <pre style="text-align: left">
+        <code>
+                                            var socialParams = {
+                                                twitter: 'Share on twitter',
+                                                google_plus: 'Share on google+'
+                                                facebook: 'Share on facebook'
+                                                linkedin: 'Share on linkedin'
+                                                width: 680
+                                                height: 360
+                                            };
+        </code>
+    </pre>
+        <li>
+            Create your buttons social each with the class share_ followed the name of the social network then add to the button an attribute data-url then add as a value the url that you want shared on a social network.
+        </li>
+        <pre>
+           <code>
+< button data-url="http://www.devphorm.com" class="share_twitter">< /button>
+   < button data-url="http://www.devphorm.com" class="share_google-plus">< /button>
+< button data-url="http://www.devphorm.com" class="share_linkedin">< /button>
+< button data-url="http://www.devphorm.com" class="share_facebook">< /button>
+            </code>
+        </pre>
+    </ol>
+    <script src="social.js"></script>
+    <script src="highlightjs/highlight.pack.min.js"></script>
+    <script>hljs.initHighlightingOnLoad()</script>
+    <script>
+        var socialParams = {
+            twitter: 'Partager sur twitter',
+            google_plus: 'Partager sur google+',
+            facebook: 'Partager sur facebook',
+            linkedin: 'Partager sur linkedin',
+            width: 680,
+            height: 360
+         };
+    </script>
+</body>
+</html>
