@@ -16,3 +16,10 @@ var socialParams = {
   height: 360
 };
 ```
+3 : Create your buttons social each with the class share_ followed the name of the social network then add to the button an attribute data-url then add as a value the url that you want shared on a social network.
+```
+< button data-url="http://www.devphorm.com" class="share_twitter">< /button>
+   < button data-url="http://www.devphorm.com" class="share_google-plus">< /button>
+< button data-url="http://www.devphorm.com" class="share_linkedin">< /button>
+< button data-url="http://www.devphorm.com" class="share_facebook">< /button>
+```
